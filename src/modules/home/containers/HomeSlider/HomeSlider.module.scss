@@ -1,0 +1,45 @@
+.sliderContainer {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    li:not(:first-child):not(:last-child) {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid rgb(90, 89, 89);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.3;
+
+      &::before {
+        content: " ";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: rgb(90, 89, 89);
+        z-index: 1;
+        border-radius: 50%;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    li {
+      cursor: pointer;
+      display: flex;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .dot {
+      background-color: white;
+    }
+  }
+}

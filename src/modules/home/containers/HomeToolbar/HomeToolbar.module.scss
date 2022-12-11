@@ -1,0 +1,15 @@
+.toolbar {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(237, 233, 233);
+
+  :nth-child(odd) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

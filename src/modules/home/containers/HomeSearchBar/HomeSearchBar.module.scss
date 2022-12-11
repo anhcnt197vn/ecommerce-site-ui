@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid rgb(237, 233, 233);
+
+  .leftSide {
+    display: flex;
+    align-items: center;
+
+    .title {
+      color: rgb(227, 16, 227);
+      margin-right: 3rem;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .rightSide {
+    display: flex;
+    align-items: center;
+
+    .marginRight {
+      margin-right: 3rem;
+    }
+
+    .cartButton {
+      background-color: rgb(227, 16, 227);
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+    }
+  }
+}

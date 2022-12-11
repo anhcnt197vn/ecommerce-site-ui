@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+  border-bottom: 1px solid rgb(237, 233, 233);
+  padding: 0.5rem 3rem;
+
+
+  li:not(last-child) {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+}

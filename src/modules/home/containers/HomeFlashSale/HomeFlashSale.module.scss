@@ -1,0 +1,22 @@
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 25px;
+  }
+
+  .productContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
