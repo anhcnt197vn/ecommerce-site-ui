@@ -3,18 +3,26 @@ import Image from "next/image";
 import { AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 import classNames from "classnames";
 import { Product } from "../../../../utils/types";
+import { useProductModal } from "../../hooks/useProductModal";
 
 interface Props {
   item: Product;
 }
 
 export const ProductCard: React.FC<Props> = ({ item }) => {
+  const { handleToggleModal } = useProductModal();
+
   return (
-    <div className={styles.productCardContainer}>
+    <div
+      className={styles.productCardContainer}
+      onClick={() => {
+        handleToggleModal({ isOpen: true, product: item });
+      }}
+    >
       <div className={styles.productCardHeader}>
         <Image src="/images/product.jpg" alt="product" fill />
         <div className={styles.discount}>-15%</div>
-        <button className={styles.heartButton}>
+        <button className={styles.heartButton} onClick={(e) => e.stopPropagation()}>
           <AiOutlineHeart fontSize={20} />
         </button>
       </div>

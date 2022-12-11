@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageContainer {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  flex: 1
+}
+
+.productContainer {
+  flex: 1;
+  margin-left: 20px;
+}

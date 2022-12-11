@@ -1,3 +1,4 @@
+import { ProductModal } from "./components/ProductModal";
 import { HomeFlashSale } from "./containers/HomeFlashSale";
 import { HomeNavBar } from "./containers/HomeNavBar";
 import { HomeSearchBar } from "./containers/HomeSearchBar";
@@ -15,6 +16,7 @@ export const HomeModule: React.FC = () => {
       <main>
         <HomeSlider />
         <HomeFlashSale />
+        <ProductModal />
       </main>
     </>
   );
